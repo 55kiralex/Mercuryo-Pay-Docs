@@ -293,8 +293,11 @@ The data is transmitted by an HTTP POST request to the Partner's website, where:
 | card_number  | Incomplete card number (Availability depends on the type of connection and acquirer).  |
 | pan6  | Card bin   |
 | pan4  | Last 4 digits of the card number   |
-| cardholder_name  | Cardholder's name (Availability depends on the type of connection and acquirer)   |
-| processing_error_msg  | Payment error (in case of processing status - 99).   |
+| cardholder_name  | Cardholder's name  |
+| card_expired  | Card`s expiration date  |
+| processing_error_msg  | Payment error (If error occurs, here you may see - 99).   |
+| internal_error_reference  | Payment error (If error occurs, here you may see - 99).   |
+| external_error_id  | Payment error  |
 | authorization_code  | Payment system authorization code. The parameter is optional   |
 | pay_token  | Token for generating recurring payments. The parameter is optional and depends on the settings of the payment gateway   |
         
@@ -761,7 +764,7 @@ Testing of recurring payments can be carried out with the card without 3Ds
 
 Card number: 4111111111111111 **OR** 5555555555555599
 
-Expiry date: 12/19
+Expiry date: 12/25
 
 Cardholder: Ivan Petrov
 
