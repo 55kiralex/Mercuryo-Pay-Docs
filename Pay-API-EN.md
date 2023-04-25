@@ -104,7 +104,7 @@ Request for a URL https://pay.mercuryo.io/pay/ (POST) two parameters are passed:
 
 
 | Parameter name  | Type  | Maximum length  | Description | Example  | Mandatory |
-| ------------- | -------------  | :-------------: | -------------  | ------------  | |
+| ------------- | -------------  | :-------------: | -------------  | ------------  | ------------- |
 | api_key  | String   | 255  | Store key (identifier)   | c84f1ac0-e4f0-0131-5298-70921c57c2a2   | |
 | expiration| String  | -  | Maximum time for order payment   | 2014-07-21 12:44  | |
 | amount  | Integer   | 10,2  | Price to be paid Format: a positive number with "." as the separator, no more than two digits after the dot | 123.45  | |
